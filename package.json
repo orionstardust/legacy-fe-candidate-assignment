@@ -1,0 +1,24 @@
+{
+  "name": "web3-message-signer-verifier",
+  "version": "1.0.0",
+  "description": "Web3 Message Signer & Verifier with Dynamic.xyz headless wallet",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"yarn dev:backend\" \"yarn dev:frontend\"",
+    "dev:frontend": "cd frontend && yarn dev",
+    "dev:backend": "cd backend && yarn dev",
+    "build": "yarn build:frontend && yarn build:backend",
+    "build:frontend": "cd frontend && yarn build",
+    "build:backend": "cd backend && yarn build",
+    "install:all": "yarn install && cd frontend && yarn install && cd ../backend && yarn install",
+    "test": "yarn test:frontend && yarn test:backend",
+    "test:frontend": "cd frontend && yarn test",
+    "test:backend": "cd backend && yarn test"
+  },
+  "keywords": ["web3", "ethereum", "signature", "verification", "dynamic.xyz"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+} 
