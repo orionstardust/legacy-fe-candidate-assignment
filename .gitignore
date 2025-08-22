@@ -2,17 +2,22 @@
 node_modules/
 */node_modules/
 
-# Environment variables
+# Environment variables (exclude .env files but keep .env.example)
 .env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
-*/env
-*/env.local
-*/env.development.local
-*/env.test.local
-*/env.production.local
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+backend/.env
+backend/.env.local
+backend/.env.development.local
+backend/.env.test.local
+backend/.env.production.local
 
 # Build outputs
 dist/
